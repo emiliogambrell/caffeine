@@ -1,5 +1,5 @@
 ABOUT:
-Caffeine is an experimental extension for Google ChromeBooks that overrides the default power settings. v1 offers a simple icon that you can toggle to keep the screen on or off (the default mode and default power settings).
+Caffeine is an experimental extension for Google ChromeBooks that overrides the default power settings. v1 offers a simple icon that you can toggle to keep the screen on or off (the default mode is off and uses the ChromeBook's default power settings).
 
 INSTALL:
 1) Go to about:flags on your ChromeBook, enable "Experimental Extension APIs", restart.
