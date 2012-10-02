@@ -1,0 +1,17 @@
+{
+	"name": "Caffeine",
+    "description": "Gives your ChromeBook juice to stay awake!",
+	"version": "1",
+	"manifest_version": 2,
+	"permissions": ["experimental"],
+	"background": {
+	    "scripts" : ["background.js"]
+	},
+	"icons": { 
+  	    "128": "caffeineEnabled.png"
+    },
+    "browser_action": {
+        "default_icon": "caffeineDisabled.png",
+        "default_title": "Caffeiene enables your machine to stay awake!"
+    }
+}
