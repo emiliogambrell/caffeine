@@ -1,17 +1,24 @@
 {
 	"name": "Caffeine",
-    "description": "Gives your ChromeBook juice to stay awake!",
-	"version": "1",
+	"version": "2",
 	"manifest_version": 2,
-	"permissions": ["experimental"],
-	"background": {
-	    "scripts" : ["background.js"]
-	},
-	"icons": { 
-  	    "128": "caffeineEnabled.png"
-    },
+		
+    "description": "Gives your ChromeBook the juice to stay awake!",
+	"icons": { "128": "caffeineEnabled.png" },
+    
     "browser_action": {
-        "default_icon": "caffeineDisabled.png",
-        "default_title": "Caffeiene enables your machine to stay awake!"
-    }
+        "default_icon": "caffeineEnabled.png",
+        "default_title": "Gives your ChromeBook the juice to stay awake!"
+    },
+
+	"background": {
+	    "scripts" : ["eventPage.js"],
+	    "persistent": false
+	},
+	
+	"offline_enabled": true,
+	
+	"permissions": ["experimental", "storage", "notifications"],
+	
+    "web_accessible_resources": ["caffeineEnabled.png"]
 }
